@@ -1,176 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future</title>
-<style type="text/css">
-/*图片*/
-#b2a1{
-    width: 56%;
-    overflow: hidden;
-    left: 0;
-    height: 730px;
-    padding: 0;
+    <title>xyw的博客</title>
+    <style>
+ * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+#logo{
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    color: #99CCCC;
+    font-size: 1.5em;
+}
+.headindex{
+    position: absolute;
     top: 0;
-    margin: 0;
-    position:absolute;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-/* 图片文字*/
-#b24f{
-    font-size: 35px;
-    font-family: 微软雅黑;
-    position:absolute;
-    margin: 325px 115px 335px 115px;
-    color: white;
-    font-weight: bold;
-
-}
-/*大的div*/
-.ksga2f{
-    position: relative; /*相对定位*/
-}
-/*三个小点中的两个*/
-#sge35{
-    float: left;
-    position:absolute;/*相对定位*/
-    top: 45px;
-}
-/*三个小点中的一个*/
-#snfk3{
-    float: left;
-    position: absolute;/*相对定位*/
-    top: 278px;
-    height: 390px;
-    width: 390px;
-    left: -8px;
-}
-/*登录界面图片*/
-.sfkag3435g{
-    height: 60px;
-    width: 60px;
-    float: right;
-    overflow: hidden;
-    position:absolute;
-    right: 450px;
-    top: 120px;
-    }
-/*登录界面文字*/
-#dgsg353dg5fh{
-    width: 225px;
-    height: 50px;
-    font-size: 30px;
-    font-family: 微软雅黑;
-    text-align: center;
-    color: #696969;
-    position: absolute;
-    top: 105px;
-    right: 215px;
-    margin: 25px 0 25px 0;
-}
-/*登录*/
-#g39nnf3{
-    width: 50px;
-    height: 50px;
-    font-family: SimHei;
-    font-size:35px;
-    color: black;
-    position: absolute;
-    top: 200px;
-    right:450px;
-}
-/*登录表单*/
-#ffe664{
-    width: 300px;
-    height: 220px;
-    position: relative;
-    top: 271px;
-    right: -1036px;
-    overflow: hidden;
-    margin: 0;
-}
-/*密码框*/
-#z2353gfg3{
-    border: 2px solid #6495ED;
-    height: 30px;
-    width: 210px;
-    border-radius: 10px;
-    outline: none;/*点击密码框后不出现边框*/
-    padding: 5px;
-}
-/*登录按钮*/
-#sdasf533{
-    background-color: #87CEFA;
-    position: relative;
-    top: 40px;
-    border-radius: 10px;
-    text-align: center;
-    border: none;
-    width: 225px;
-    height: 30px;
-}
-#jwfe8{
-    border: none;
-    outline: none;
-    background-color: transparent;/*去掉背景颜色*/
-    margin: 5px 0 5px 0;
-}
-#images{
+    left: 0;
     width: 100%;
-    height: 730px;
+    display: flex;
+    justify-content: space-between;/*均列排布*/
+    align-items: center;/*同一条水平线*/
+    background-color: #6699CC;
+    padding: 15px 10px;
 }
-</style>
+.somethings{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.somethings li{
+    list-style: none;
+    margin: 0 20px;
+}
+.somethings li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 650;
+    letter-spacing: 1px;
+}
+.somethings li a:hover{
+    color: wheat;
+}
+.banner{
+    background-color: #99CCCC;
+    padding: 110px 100px 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/*垂直居中*/
+}
+.banner .banner-max{
+    max-width: 1000px;
+}
+.banner h2{
+    padding-bottom: 20px;
+    font-size: 2em;
+    color: black;
+}
+.banner .banner-max p{
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-weight: 600;
+}
+.banner .banner-max a{
+    display: inline-block;
+    color: #336699;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    background-color: thistle;
+}
+@media screen and (max-width:991px) {
+    .headindex{
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+    .banner{
+        padding: 150px 20px 50px;
+        flex-direction: column-reverse;
+    }
+    .banner-max h2{
+        font-size: 2.5em;
+    }
+}
+
+    </style>
 <meta name="generator" content="Hexo 5.4.0"></head>
 <body>
-    <!--左边大的div-->
-    <div class="ksga2f">
-    <div id=b2a1>
-        <img src="https://img.imgdb.cn/item/6051e88b524f85ce29b9741d.png" id="images">
-    </div>
-    <!--图片的文字-->
-    <div id="b24f">
-        <p>“温柔懒懒的海风，吹到高高的山峰。”</p>
-    </div>
-    <!--三个小点-->
-    <div id="sge35">
-        <svg width="300px" height="390px" xmlns="http://www.w3.org/2000/svg">
-        <path stroke="#7FFFAA" id="svg_1" d="m47.2775,363.50806l1.6,-5.00001l6.4,0l-1.6,5.00001l-6.4,0z" stroke-width="1.5" fill="#7FFFAA"/>
-        <path stroke="#98FB98" id="svg_1" d="m112.98249,124.71286l0.59421,-2.2252l2.40579,-0.99031l2.40579,0.99031l0.59422,2.2252l-1.6649,1.78449l-2.6702,0l-1.66489,-1.78449z" stroke-width="1.5" fill="#98FB98"/>
-    </svg></div>
-    <div id="snfk3">
-        <!--最下面的一个小点-->
-        <svg width="300px" height="390px" xmlns="http://www.w3.org/2000/svg">
-            <path stroke="#90EE90" id="svg_1" d="m234.3675,359.77972l0,0c0,-2.20914 1.79086,-4 4,-4l0,0c1.06086,0 2.07828,0.42143 2.82843,1.17157c0.75015,0.75014 1.17157,1.76756 1.17157,2.82842l0,0c0,2.20914 -1.79086,4 -4,4l0,0c-2.20914,0 -4,-1.79086 -4,-4zm4,-4l0,7.99999m-4,-4l7.99999,0" stroke-width="1.5" fill="#90EE90"/>
-        </svg></div>
-    </div>
-       <!--登录界面图片-->
-        <div class="sfkag3435g">
-            <div id="dgsd34s35fb3s">
-                <img src="https://img.imgdb.cn/item/60520e61524f85ce29d07d2e.jpg" alt="" width="60px" height="60px">
-            </div>
+    <header class="headindex">
+        <a href="#" id="logo">Welcome to dwjun'blog</a>
+        <ul class="somethings">
+            <li><a target="_blank" rel="noopener" href="https://xuyaowei-oss.github.io">主页</a></li>
+            <li><a href="https://baidu.com" target="_blank">百度</a></li>
+            <li><a href="https://cn.bing.com/" target="_blank">必应</a></li>
+            <li><a href="#">谷歌</a></li>
+            <li><a href="#">备用</a></li>
+        </ul>
+    </header>
+    <div class="banner">
+        <div class="banner-max">
+            <h2>Hello My Frinds</h2>
+            <p>欢迎你呀~早点睡，晚安。</p>
+            <a href="#">read more</a>
         </div>
-        <div id="dgsg353dg5fh">
-            <h5>欢迎来到博客界面</h5>
-        </div>
-        <!--<div id="g39nnf3">
-            <h6>登录</h6>
-        </div>-->
-        <!--表单-->
-        <!--
-            <div id="ffe664">
-            <form action="" id="sflas99">
-            <input type="text" name="username" placeholder="username" id="z2353gfg3">
-            </form><br>
-            <form action="" id="sflas99">
-                <input type="password" name="password" placeholder="password" id="z2353gfg3">
-            </form>
-            <form action="" id="sdasf533">
-                <button type="submit" id="jwfe8">登录</button>
-        </div>
-        -->
+    </div>
 </body>
 </html>
