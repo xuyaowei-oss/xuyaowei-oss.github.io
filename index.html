@@ -26,8 +26,8 @@ box-sizing: border-box;
     display: flex;
     justify-content: space-between;/*均列排布*/
     align-items: center;/*同一条水平线*/
-    background-color: #6699CC;
-    padding: 15px 10px;
+    background-color: #F0FFFF;
+    padding: 5px 10px;
 }
 .somethings{
     display: flex;
@@ -41,17 +41,18 @@ box-sizing: border-box;
 }
 .somethings li a{
     text-decoration: none;
-    color: white;
+    color: #FA8072;
     font-weight: 650;
     letter-spacing: 1px;
 }
 .somethings li a:hover{
-    color: wheat;
+    color: #6A5ACD;
+    background-color: white
 }
 .banner{
     background-color: #99CCCC;
     padding: 110px 100px 100px;
-    min-height: 100vh;
+    min-height: 96.5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;/*垂直居中*/
@@ -60,13 +61,13 @@ box-sizing: border-box;
     max-width: 1000px;
 }
 .banner h2{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 2em;
     color: black;
 }
 .banner .banner-max p{
     color: rgb(0, 0, 0);
-    font-size: 1em;
+    font-size: 4em;
     font-weight: 600;
 }
 .banner .banner-max a{
@@ -78,17 +79,30 @@ box-sizing: border-box;
     margin-top: 20px;
     background-color: thistle;
 }
+.panel{
+    width: 100%;
+    background-color: #F5F5F5;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    height: 3.5vh;
+}
 @media screen and (max-width:991px) {
     .headindex{
-        padding: 10px 20px;
+        padding: 0px 2px;
         flex-direction: column;
+        
     }
     .banner{
-        padding: 150px 20px 50px;
-        flex-direction: column-reverse;
+        padding: 112px 20px 50px;
+        flex-direction: column;
+        background-image: url(http://www.gov.cn/fuwu/2021-06/07/5615847/images/0d458de12e314096af8469494ca178ed.jpg);
+        background-position:center;
+        min-height: 97.5vh;
     }
     .banner-max h2{
         font-size: 2.5em;
+        
     }
 }
 
@@ -107,10 +121,15 @@ box-sizing: border-box;
     </header>
     <div class="banner">
         <div class="banner-max">
-            <h2>Hello My Frinds</h2>
-            <p>欢迎你呀~早点睡，晚安。</p>
-            <a href="#">read more</a>
+            <h2>祝广大学子：</h2>
+            <p>高考加油！
+            </p>
+            <a href="http://www.gov.cn/fuwu/2021-06/07/content_5615847.htm" target="_blank">read more</a>
         </div>
+    </div>
+    <div class="panel">
+        <p>xyw'blog ©2021</p>
+
     </div>
 </body>
 </html>
